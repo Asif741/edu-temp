@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            margin-bottom: 270px;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            background: #bd9cf2;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+        }
+
+        .add {
+            margin-right: 20px;
+        }
+
+        #nav {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            background: white;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .logo {
+            display: flex;
+            margin: 0px 140px 0px 0px;
+            cursor: pointer;
+        }
+
+        .container i img {
+            display: flex;
+            width: 100x;
+            height: 50px;
+            margin-left: 50px;
+
+        }
+
+        #nav li {
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            border-top: 2px solid #0891b2;
+            /* transition-delay: 0.1s;
+            transition-duration: 1s; */
+
+        }
+
+        #icontop {
+            height: 25px;
+            width: 25px;
+            margin-left: 15px;
+            background: none;
+        }
+
+        .icontop {
+            display: flex;
+            margin-left: 50px;
+            width: 130px;
+        }
+
+        .baner img {
+            width: 100%;
+            height: 600px;
+            /* opacity: 80%; */
+            /* z-index:-2 ; */
+            /* border-radius: 10px; */
+            /* margin: 1px; */
+
+
+        }
+
+        .banertext {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            z-index: -15;
+            margin-top: -466px;
+            margin-left: 171px;
+            color: #e6841f;
+
+        }
+
+        .banertext h1 {
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        .banertext p {
+            /* font-weight: bolder; */
+            font-size: 18px;
+            color: #cdc5fe;
+        }
+
+        #button1 {
+            background-color: #060d60;
+            color: #e8b7c9;
+            width: 120px;
+            height: 200px;
+            border: 3px Solid white;
+            border-radius: 10px;
+            padding: 6px;
+            font-size: 16px;
+            /* font-weight: bold; */
+        }
+
+        #button1:hover {
+            background-color: #e8b7c9;
+            color: #060d60;
+            border: 5px Solid #060d60;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            padding: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            transition-delay: 0.1s;
+            transition-duration: 1s;
+        }
+
+        .contain {
+            display: flex;
+            margin: auto;
+            width: 1200px;
+
+        }
+
+
+
+        #box1 img {
+            width: 600px;
+            height: 500px;
+            border-radius: 10px;
+
+        }
+
+        #box2 {
+            width: 512px;
+            height: 523px;
+            margin-left: auto;
+        }
+
+        #box2 h1,
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #box2 h2 {
+            color: #0891b2;
+            text-align: center;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .boximg img {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            border-radius: 700px;
+        }
+
+        .heading h2 {
+            font-family: 'Montserrat';
+            font-weight: bolder;
+            /* color: red; */
+            text-align: center;
+            margin: 100px 0px 20px 0px;
+            font-size: 300%;
+        }
+
+        .heading p {
+            text-align: center;
+            text-align: justify;
+            text-align-last: center;
+            width: 45%;
+            margin: auto;
+        }
+
+        #pb {
+            width: 85%;
+            margin: auto;
+        }
+
+        #pb i img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+
+
+        }
+
+        .pricebox {
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+            width: 200px;
+            height: 230px;
+            margin: 70px -20px 10px 56px;
+            padding: 35px;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: 'Montserrat';
+        }
+
+        #pb1 {
+            background-color: #0891b2;
+            padding-left: 30px;
+
+        }
+
+        #pb2 {
+            background-color: #dfc05f;
+        }
+
+        #pb3 {
+            background-color: #e376ac;
+        }
+
+        #pb4 {
+            background-color: #0bd0f1;
+
+        }
+
+        #pb5 {
+            background-color: #7c75ff;
+
+        }
+
+        #button2 {
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100px;
+            height: 50px;
+            border-radius: 60px;
+        }
+
+        #button2:hover {
+            background-color: #060d60;
+            color: #e0e7ff;
+        }
+
+        #button3 {
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            margin: 21px -498px 8px 550px;
+            width: 150px;
+            height: 55px;
+            background-color: #1184a7;
+            color: #e0e7ff;
+            font-weight: bold;
+        }
+
+        #button3:hover {
+            background-color: #e0e7ff;
+            color: #1184a7;
+        }
+
+        .bg1 img {
+            width: 100%;
+            height: 500px;
+            margin-top: 50px;
+
+        }
+
+        #bg1text {
+            margin: -430px 1px 1px 1px;
+            color: #e0e7ff;
+
+        }
+
+        .pcourses {
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
+
+        .coursbox {
+            width: 378px;
+            height: 600px;
+            border: 1px solid red;
+        }
+
+        .c-box {
+            margin: auto;
+            width: 80%;
+            height: 1120px;
+            /* border: 2px solid red; */
+
+        }
+
+        .cboxin {
+            display: inline-block;
+            margin: 30px 10px;
+            width: 370px;
+            height: 500px;
+            /* border: 2px solid red; */
+        }
+
+        .cboxin i img {
+            display: inline-block;
+            margin: 0px -3px -3px 11px;
+            width: 25px;
+            height: 15px;
+
+        }
+
+        .cboxin h2 {
+            margin-left: 15px;
+        }
+
+        .cboxin h3 {
+            float: right;
+            margin: -65px 91px 7px 8px;
+        }
+
+        .cboxin #button5 {
+            float: right;
+            margin: -33px 100px 0px 0px;
+            border-radius: 30px;
+            background-color: #7c0a74;
+            color: #dfe0ed;
+
+        }
+
+        .cboxin img {
+            width: 370px;
+            height: 250px;
+            margin-top: 0;
+        }
+
+        #imgh:hover {
+            /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            transition-delay: 0.1s;
+            transition-duration: 1s;
+            width: 370px;
+            height: 290px;
+        }
+
+        #user img {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            margin: 20px 1px 1px 30px;
+        }
+
+        .price {
+            margin: 20px 1px 1px 30px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #1428bd;
+        }
+
+        #bt5 {
+            margin-right: 120px;
+        }
+
+        #pimg {
+            width: 100%;
+            height: 600px;
+            opacity: 150%;
+        }
+
+        .pcon {
+            background-color: white;
+            color: black;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+            margin-left: 20px;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            /* border: 2px solid red; */
+            border-radius: 20px;
+        }
+
+        .pcon img {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            margin: -41px 396px 50px 15px;
+        }
+
+        #coma {
+            display: flex;
+            color: #0bd0f1;
+            float: right;
+            margin: -221px 17px 0px 0px;
+        }
+
+        .pcourses1 #button6 {
+            float: right;
+            margin: -7px 99px -15px 0px;
+            border-radius: 30px;
+            background-color: #7c0a74;
+            color: #dfe0ed;
+        }
+
+        .pcon1 {
+            display: flex;
+            width: 68%;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .pcon1 i img {
+            display: inline-block;
+            margin: 0px 4px -29px 14px;
+            width: 25px;
+            height: 15px;
+        }
+
+        .pcourses1 {
+            display: flex;
+            margin: -669px 0px 1px -90px;
+        }
+
+        .continer {
+            display: flex;
+            width: 100%;
+            /* background-color: #0bd0f1; */
+            height: 203px;
+            /* border: 2px Solid red; */
+            margin: auto;
+            /* margin-left: 150px; */
+            z-index: 15;
+        }
+
+        .ow1 {
+            display: flex;
+            width: 670px;
+            height: 215px;
+            border: 2px solid blue;
+            margin: 10px 10px 15px 128px
+        }
+
+        .ow2 {
+            display: inline;
+            /* border: 2px solid red; */
+            width: 600px;
+            height: 200px;
+            text-align: justify;
+            margin-left: 250px;
+        }
+
+        .ow2 i img {
+            width: 100px;
+            height: 65px;
+            /* border: 2px Solid Blue; */
+            border-radius: 1px;
+            /* border: 2px solid red; */
+            border-radius: 130px;
+            padding: 38px 23px;
+            margin: 1px 1px -150px -188px;
+            background-color: green;
+        }
+
+        .owimg {
+            display: flex;
+            float: right;
+            margin-top: -600px;
+            margin-right: 200px;
+        }
+
+        .conprice {
+            width: 100%;
+            height: 1079px;
+            background-image: url(img/price-bg.jpg);
+            margin: -128px 1px 1px 1px;
+        }
+
+        .ourpbox {
+            box-sizing: border-box;
+            width: 85%;
+            height: 800px;
+            margin: auto;
+            /* border: 2px solid white; */
+            padding: 30px;
+        }
+
+        .ourpbox1 {
+            text-align: center;
+            display: inline-block;
+            background-color: white;
+            width: 378px;
+            height: 700px;
+            /* border: 2px solid red; */
+            padding: auto;
+            margin: auto;
+            margin-right: 18px;
+        }
+
+        .ourpbox1 h3 {
+            color: #2d2c8e;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 35px;
+            font-size: large;
+        }
+
+        #btourpbox1 {
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            width: 150px;
+            height: 55px;
+            background-color: #1184a7;
+            color: #e0e7ff;
+            font-weight: bold;
+        }
+
+        #btourpbox1:hover {
+            background-color: #e0e7ff;
+            color: #1184a7;
+        }
+
+        #btourpbox1 i img {
+            width: 20px;
+            height: 20px;
+            margin: -11px 9px -7px -25px
+        }
+
+        #btourpbox2 {
+            background-color: #eec0de;
+            color: #121eba;
+            border: 2px solid #0c29b8;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        #btourpbox2:hover {
+            background-color: #060a3d;
+            color: #eec0de;
+
+        }
+
+        .blog {
+            width: 80%;
+            height: 600px;
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        .obb3 {
+            float: right;
+            margin: auto;
+            width: 827px;
+            height: 500px;
+            /* border: 2px solid #0bd0f1; */
+            margin: -384px 9px 1px 2px;
+        }
+
+        .bgfooter {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+            display: flex;
+            width: 100%;
+            height: 600px;
+            /* border: 2PX solid RED; */
+            background-image: url(background/cta-bg.jpg);
+            margin: -128px 1px 1px 1px;
+            color: white;
+        }
+
+        .bgfooterdiv {
+            width: 300px;
+            height: 300px;
+            /* border: 2px solid red; */
+            margin: 80px 1px 1px 50px;
+        }
+
+        .bgfooterdiv i img {
+            width: 240x;
+            height: 120px;
+        }
+        #fbox1{
+            color: #efb0cd;
+        }
+        #fbox3 {
+            margin: 63px 18px 0px 74px;
+            color: #dee4ff;
+        }
+        #fbox4 {
+            margin: 33px 18px 0px 35px;
+            color: #cbf1bf;
+        }
+        #fbox2 h3 {
+            color: #a98858 ;
+            padding: 10px;
+            margin: -168px 0px 80px 91px ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .fbox5 {
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* display: inline-block; */
+            float: left;
+            width: 500px;
+            height: 150px;
+            /* border: 2px solid red; */
+            margin: -184px 0px 0px 196px;
+            color: #df9999;
+        }
+        .fbox6 h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .fbox6 {
+            /* display: inline-block; */
+            float: left;
+            margin: -184px 0px 0px 796px;
+            width: 600px;
+            height: 150px;
+            /* border: 2px solid red; */
+            color: white;
+        }
+
+        .fbox7 {
+            display: inline-block;
+            
+        }
+        .fbt1{
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            width: 245px;
+            height: 46px;
+            background-color: #d0d8f3;
+            color: #0f2366;
+            font-weight: bold;
+        }
+
+        .fbt1:hover {
+            opacity:10;
+            background-color: #010511;
+            color: #afb0dd;
+
+        }
+        .fbt2{
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            width: 150px;
+            height: 46px;
+            background-color: #b211e7;
+            color: #e0e7ff;
+            font-weight: bold;
+        }
+
+        .fbt2:hover {
+            background-color: #e0e7ff;
+            color: #1184a7;
+
+        }
+        #fbox2 i img {
+            /* border: 1px solid red; */
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            margin-bottom: 70px;
+            padding: 10px;
+        }
+    </style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="add">Dawsonville, GA 35, New York</div>
+            <div class="add">+86 8952 314 56</div>
+            <div class="add">Sun - Fri, 10am - 5 pm</div>
+        </div>
+        <nav>
+            <div class="container" id="nav">
+                <div><i><img src="logo.png.jpg" alt="" ></a></i> </div>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Course</li>
+                <li>Instructor</li>
+                <li>Event</li>
+                <li>Pages</li>
+                <li>Contact</li>
+                <div class="icontop">
+                    <div class="container" id="icontop"> <img src="img/facebook-brands.svg"
+                            alt="" srcset=""> </div>
+                    <div class="container" id="icontop"> <img src="img/twitter-brands.svg"
+                            alt="" srcset=""> </div>
+                    <div class="container" id="icontop"> <img src="img/youtube-brands.svg"
+                            alt="" srcset=""> </div>
+                    <div class="container" id="icontop"> <img src="img/linkedin-brands.svg"
+                            alt="" srcset=""> </div>
+                </div>
+            </div>
+        </nav>
+        <div class="baner">
+            <img src="Slider/slider-bg.jpg" alt="" srcset="">
+        </div>
+        <div class="banertext">
+            <h1>Admission Going On 2022</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt odit veniam temporibus
+                accusantium, ab qui minus, porro saepe doloremque modi consectetur natus ipsa! Velit dolor
+                fugiat error officiis pariatur nisi.</p>
+            <button id="button1">See Courses</button>
+        </div>
+    </header>
+    <div class="contain">
+        <div id="box1"><img src="img/success-img.jpg" alt=""></div>
+        <div id="box2">
+            <h1>The History of Our Success and Growth</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</p>
+            <h2>Should You Choose Us?</h2>
+            <p>Rem aperiam eaque ipsa quae ab illo inventore eritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</p>
+            <div class="boximg"><img src="img/success-author.jpg" alt="" sizes=""
+                    srcset=""><img src="img/author-sig.png" alt=""></div>
+        </div>
+    </div>
+    <div class="heading">
+        <h2>The Best Courses On The <br> Internet We Provide </h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium totam rem
+            aperiam eaque ipsa quae ab illo</p>
+    </div>
+    <div id="pb">
+        <div class="pricebox" id="pb1"><i>
+                <img src="img/laptop-code-solid.svg" alt="">
+            </i> Software Development
+            <button id="button2"> $399.99</button>
+        </div>
+        <div class="pricebox" id="pb2"><i>
+                <img src="Icons/layer-group-solid.svg" alt="">
+            </i>Graphics Design
+            <button id="button2"> $399.99</button>
+        </div>
+        <div class="pricebox" id="pb3"><i>
+                <img src="Icons/chart-line-solid.svg" alt="">
+            </i>Business Studies
+            <button id="button2"> $399.99</button>
+        </div>
+        <div class="pricebox" id="pb4"><i>
+                <img src="Icons/flag-solid.svg" alt="">
+            </i>Language Development
+            <button id="button2"> $399.99</button>
+        </div>
+        <div class="pricebox" id="pb5"><i>
+                <img src="Icons/cubes-solid.svg" alt="">
+            </i> <br> Civil Engineering
+            <button id="button2"> $399.99</button>
+        </div>
+    </div>
+    <div class="bg1">
+        <div class="img"><img src="background/cta-bg.jpg" alt="" srcset="">
+            <div>
+                <div class="heading" id="bg1text">
+                    <h2>Easiest Way To Learn <br> Everything </h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium
+                        totam rem
+                        aperiam eaque ipsa quae ab illo</p>
+                    <button id="button3">See Courses</button>
+                    <button id="button3">Contact Us</button>
+                </div>
+            </div>
+            <div class="pcourses">
+                <div class="heading">
+                    <h2>Popular Courses</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium
+                        totam rem
+                        aperiam eaque ipsa quae ab illo</p>
+                </div>
+            </div>
+            <div>
+                <div class="c-box">
+                    <div class="cboxin" id="cbox-1">
+                        <img id="imgh" src="courseimg/course-img-1.jpg" alt="" sizes=""
+                            srcset="">
+                        <h2>Mobile App Development</h2>
+                        <i><img src="Icons/user-solid.svg" alt="">350</i>
+                        <i><img src="Icons/clock-solid.svg" alt="">2hr 29 Min</i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <div class="user" id="user"> <img src="author/author-1.jpg" alt="">
+                        </div>
+                        <h3>Jhon Smith</h3>
+                        <button id="button5">Programer</button>
+                        <hr>
+                        <h4 class="price">Price $250&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <i> <img
+                                    src="tags/tag-solid.svg" alt=""></i>Get Enrolled</h4>
+                    </div>
+                    <div class="cboxin" id="cbox-2">
+                        <img id="imgh" src="courseimg/course-img-2.jpg" alt="" sizes=""
+                            srcset="">
+                        <h2>Expert Data Science</h2>
+                        <i><img src="Icons/user-solid.svg" alt="">350</i>
+                        <i><img src="Icons/clock-solid.svg" alt="">2hr 29 Min</i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <div class="user" id="user"> <img src="author/author-2.jpg" alt="">
+                        </div>
+                        <h3>Wanda Maxima
+                        </h3>
+                        <button id="button5">Data Scientist
+                        </button>
+                        <hr>
+                        <h4 class="price">Price $250&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <i> <img
+                                    src="tags/tag-solid.svg" alt=""></i>Get Enrolled</h4>
+                    </div>
+                    <div class="cboxin" id="cbox-1">
+                        <img id="imgh" src="courseimg/course-img-3.jpg" alt="" sizes=""
+                            srcset="">
+                        <h2>Mobile App Development</h2>
+                        <i><img src="Icons/user-solid.svg" alt="">350</i>
+                        <i><img src="Icons/clock-solid.svg" alt="">2hr 29 Min</i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <div class="user" id="user"> <img src="author/author-3.jpg" alt="">
+                        </div>
+                        <h3 id="bt5">William Differ</h3>
+                        <button id="button5">Computer Programming</button>
+                        <hr>
+                        <h4 class="price">Price $250&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <i> <img
+                                    src="tags/tag-solid.svg" alt=""></i>Get Enrolled</h4>
+                    </div>
+                    <div class="cboxin" id="cbox-1">
+                        <img id="imgh" src="courseimg/course-img-4.jpg" alt="" sizes=""
+                            srcset="">
+                        <h2>3D Blue Print Artist</h2>
+                        <i><img src="Icons/user-solid.svg" alt="">350</i>
+                        <i><img src="Icons/clock-solid.svg" alt="">2hr 29 Min</i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <div class="user" id="user"> <img src="author/author-4.jpg" alt="">
+                        </div>
+                        <h3>Shaown Jennifer</h3>
+                        <button id="button5">Business Man
+                        </button>
+                        <hr>
+                        <h4 class="price">Price $250&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <i> <img
+                                    src="tags/tag-solid.svg" alt=""></i>Get Enrolled</h4>
+                    </div>
+                    <div class="cboxin" id="cbox-1">
+                        <img id="imgh" src="courseimg/course-img-5.jpg" alt="" sizes=""
+                            srcset="">
+                        <h2>Graphics Design, (UX/UI)</h2>
+                        <i><img src="Icons/user-solid.svg" alt="">350</i>
+                        <i><img src="Icons/clock-solid.svg" alt="">2hr 29 Min</i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <div class="user" id="user"> <img src="author/author-5.jpg" alt="">
+                        </div>
+                        <h3>Robert James</h3>
+                        <button id="button5">UI/UX</button>
+                        <hr>
+                        <h4 class="price">Price $250&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <i> <img
+                                    src="tags/tag-solid.svg" alt=""></i>Get Enrolled</h4>
+                    </div>
+                    <div class="cboxin" id="cbox-1">
+                        <img id="imgh" src="courseimg/course-img-6.jpg" alt="" sizes=""
+                            srcset="">
+                        <h2>Web App Development</h2>
+                        <i><img src="Icons/user-solid.svg" alt="">350</i>
+                        <i><img src="Icons/clock-solid.svg" alt="">2hr 29 Min</i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        <div class="user" id="user"> <img src="author/author-6.jpg" alt="">
+                        </div>
+                        <h3>Patricia Jerry</h3>
+                        <button id="button5">Developer</button>
+                        <hr>
+                        <h4 class="price">Price $250&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <i> <img
+                                    src="tags/tag-solid.svg" alt=""></i>Get Enrolled</h4>
+                    </div>
+
+                </div>
+
+            </div>
+            <div> <img id="pimg" src="testtimonal/testimonial-bg-1.jpg" alt=""> </div>
+            <div class="pcourses1">
+                <div class="heading">
+                    <h2>What Parents Say</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium
+                        totam rem
+                        aperiam eaque ipsa quae ab illo</p>
+                    <div class="pcon1">
+                        <div class="pcon"> <img src="author/author-1.jpg" alt="">
+                            <span id="coma" style="font-size:140px;"> ,,</span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur
+                            cupiditate deserunt doloribus ea est iste magnam, magni non, odit quam quas quia
+                            quisquam rerum sapiente sit soluta.
+                            <h3 id="bt6">William Differ</h3>
+                            <button id="button6">House Keeper</button>
+
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        </div>
+                        <div class="pcon"> <img src="author/author-2.jpg" alt="">
+                            <span id="coma" style="font-size:140px;"> ,,</span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur
+                            cupiditate deserunt doloribus ea est iste magnam, magni non, odit quam quas quia
+                            quisquam rerum sapiente sit soluta.
+                            <h3 id="bt6">Olivia Otila</h3>
+                            <button id="button6">House wife</button>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        </div>
+                        <div class="pcon"> <img src="author/author-3.jpg" alt="">
+                            <span id="coma" style="font-size:140px;"> ,,</span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur
+                            cupiditate deserunt doloribus ea est iste magnam, magni non, odit quam quas quia
+                            quisquam rerum sapiente sit soluta.
+                            <h3 id="bt6">Robert James</h3>
+                            <button id="button6">Amazon Founder</button>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        </div>
+                        <div class="pcon"> <img src="author/author-4.jpg" alt="">
+                            <span id="coma" style="font-size:140px;"> ,,</span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur
+                            cupiditate deserunt doloribus ea est iste magnam, magni non, odit quam quas quia
+                            quisquam rerum sapiente sit soluta.
+                            <h3 id="bt6">Wanda Maxima
+                            </h3>
+                            <button id="button6">House wife</button>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                            <i><img src="Icons/star-solid.svg" alt="" sizes="" srcset=""></i>
+                        </div>
+                    </div>
+                </div>
+            </Div>
+        </div>
+    </div>
+    <div class="pcourses">
+        <div class="heading">
+            <h2>Our Work</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium
+                totam rem
+                aperiam eaque ipsa quae ab illo</p>
+        </div>
+    </div>
+    <div class="continer" id="ourwork">
+        <div class="ow2">
+            <i><img src="Icons/trophy-solid.svg" style="background-color: #879af6;"></i>
+            <h2 style="color: #879af6;">Prize Giving Ceremony</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque totam minus error explicabo iste
+                fuga quas laudantium necessitatibus assumenda exercitationem. Cupiditate nulla fugiat veniam
+                aliquam? Ducimus nisi mollitia illo harum.</p>
+        </div>
+    </div>
+    <div class="continer" id="ourwork">
+        <div class="ow2">
+            <i><img src="Icons/certificate-solid.svg" style="background-color: #eca3ea;"></i>
+            <h2 style="color: #eca3ea;">Certifications</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque totam minus error explicabo iste
+                fuga quas laudantium necessitatibus assumenda exercitationem. Cupiditate nulla fugiat veniam
+                aliquam? Ducimus nisi mollitia illo harum.</p>
+        </div>
+    </div>
+    <div class="continer" id="ourwork">
+        <div class="ow2">
+            <i><img src="Icons/internet-explorer-brands.svg"
+                    style="background-color: #0bd0f1;"></i>
+            <h2 style="color: #0bd0f1;">E - Learning Program</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque totam minus error explicabo iste
+                fuga quas laudantium necessitatibus assumenda exercitationem. Cupiditate nulla fugiat veniam
+                aliquam? Ducimus nisi mollitia illo harum.</p>
+        </div>
+    </div>
+    <div class="owimg"><img src="about/about-img.png" alt=""></div>
+    </div>
+    <div class="conprice">
+        <div class="heading">
+            <h2 id="conpriceh" style="color: white;"> <br><br> Our Pricing</h2>
+            <p style="color: white;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque lauda ntium totam rem aperiam eaque ipsa quae ab illo</p>
+        </div>
+        <div class="ourpbox">
+            <div class="ourpbox1">
+
+                <h3>Basic Plan</h3>
+                <h2 style="
+                color: #0d9c39;
+                font-size:50px;
+                font-weight: bolder;
+                ">
+                    $24.99</h2>
+                <button id="btourpbox2">Save 20%</button>
+                <h3>Business Study
+                </h3>
+                <h3>Basic Web Development
+                </h3>
+                <h3>Advanced Graphic Design</h3>
+                <h3>Advanced E - Learning
+                </h3>
+                <h3>Basic Language Study
+                </h3>
+                <h3>Civil Engineering
+                </h3>
+                <button id="btourpbox1"> <i><img src="Icons/trophy-solid.svg" alt=""></i> Join
+                    Now</button>
+            </div>
+            <div class="ourpbox1">
+
+                <h3>Standard Plan
+
+                </h3>
+                <h2 style="
+                color: #134952;
+                font-size:50px;
+                font-weight: bolder;
+                ">
+                    $59.99</h2>
+                <button id="btourpbox2">Save 45%</button>
+                <h3>Business Study
+                </h3>
+                <h3>Basic Web Development
+                </h3>
+                <h3>Advanced Graphic Design</h3>
+                <h3>Advanced E - Learning
+                </h3>
+                <h3>Basic Language Study
+                </h3>
+                <h3>Civil Engineering
+                </h3>
+                <button id="btourpbox1"> <i><img src="Icons/trophy-solid.svg" alt=""></i> Join
+                    Now</button>
+            </div>
+            <div class="ourpbox1">
+
+                <h3>Premium Plan</h3>
+                <h2 style="
+                color: #840f60;
+                font-size:50px;
+                font-weight: bolder;
+                ">
+                    $99.99</h2>
+                <button id="btourpbox2">Save 50%</button>
+                <h3>Business Study
+                </h3>
+                <h3>Basic Web Development
+                </h3>
+                <h3>Advanced Graphic Design</h3>
+                <h3>Advanced E - Learning
+                </h3>
+                <h3>Basic Language Study
+                </h3>
+                <h3>Civil Engineering
+                </h3>
+                <button id="btourpbox1"> <i><img src="Icons/trophy-solid.svg" alt=""></i> Join
+                    Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="blog">
+        <div class="blogtext" style="
+        width: 300px;
+        height: 400px;
+        align-items: center;
+        text-align: justify;
+        /* border: 1px solid red; */
+        ">
+            <h2>Our Blogs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero recusandae laudantium, obcaecati placeat
+                modi adipisci quae unde explicabo laborum magnam voluptatibus voluptatem, inventore pariatur dicta in
+                iusto nihil! Earum, odit!</p>
+            <button id="button3" style="margin: auto; margin-top: 30px;"> See More</button>
+        </div>
+        <div class="obb3">
+            <div class="c-box" style="height:auto;">
+                <div class="cboxin" id="cbox-1" style="margin: 1px 1px 1px 1px;">
+                    <img id="imgh" src="news/news-img-1.jpg" alt="" sizes="" srcset="">
+                    <h2>How to Choose Colors for your website design</h2>
+
+                    <h4 class="price" style="margin: 25px 1px 1px 5px;"> <i><img
+                                src="Icons/user-plus-solid.svg" alt=""></i> Jhon Doe
+
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        <i> <img src="Icons/calendar-days-solid.svg" alt=""></i> 05 July 2019
+                        <i> <img src="Icons/comments-dollar-solid.svg" alt=""></i> 18
+                    </h4>
+                </div>
+                <div class="obb3">
+                    <div class="c-box" style="height:auto;">
+                        <div class="cboxin" id="cbox-1" style="margin: -123px 1px 1px 558px;">
+                            <img id="imgh" src="news/news-img-2.jpg" alt="" sizes="" srcset="">
+                            <h2>How to Choose Colors for your website design</h2>
+                            <h4 class="price" style="margin: 25px 1px 1px 5px;"> <i><img
+                                        src="Icons/user-plus-solid.svg" alt=""></i> Jhon Doe
+
+                                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                <i> <img src="Icons/calendar-days-solid.svg" alt=""></i> 05
+                                July 2019
+                                <i> <img src="Icons/comments-dollar-solid.svg" alt=""></i> 11
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="bgfooter">
+        <div class="bgfooterdiv" id="fbox1">
+            <h2><i><img src="logo.png.jpg" alt=""></i></h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium totam
+                rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+        </div>
+        <div class="bgfooterdiv" id="fbox2">
+            <i><img src="img/news-1.jpg" alt=""></i>
+                
+                <h3>How To Develop A Website With Laravel <br>
+                05 July 19
+            </h3>
+            <div>
+                <i><img src="img/news-2.jpg" alt=""></i>
+                <h3>
+                    Easiest Way To Create A Design With Figma<br>
+                    05 July 19
+                </h3>
+            </div>
+        </div>
+        <div class="bgfooterdiv" id="fbox3">
+            <h2>Latest Courses </h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque  <br><br> lauda ntium totam 
+                rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
+        </div>
+        <div class="bgfooterdiv" id="fbox4">
+            <h2></h2>
+            <p> <br><br> Accusamus animi aperiam dolore eius eos hic illo minima quod.
+                Hakilax G. Mela</p> <br>
+            <p>Accusamus animi aperiam dolore eius eos hic illo minima quod.
+                Hakilax G. Mela</p>
+        </div>
+
+    </div>
+    <div class="fbox5" id="fbox56">
+        <h3>If&nbsp; You Have Any Kind Of Question <br> Then We Are Always Ready To Help You
+        </h3>
+        <li style="list-style-type: none;"> <a style="text-decoration: none; color: #e8d266;"
+                href="mailto:Muhammadasif741741@gmail.com">Email Us : @biztechSolution.com</a> </li> <br>
+        <li style="list-style-type: none;"><a style="text-decoration: none; color: #e8d266; " href="tel:+923321996635"> Call Us : +92 333
+                1996633</a></li>
+    </div>
+    <div class="fbox6" id="fbox56">
+        <h3>Subscribe Our Newsletter To Get <br> More Update & Join Our Course Info
+        </h3> 
+        <input class="fbt1" type="text" placeholder="Write Your Email to Subscribe" required>
+
+            <button class="fbt2"> Subscribe</button>
+        <div>   
+        </div>
+    </div>
+    </div>
+
+</footer>
+
+</html>
